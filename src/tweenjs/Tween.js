@@ -494,8 +494,8 @@ this.createjs = this.createjs||{};
 	 */
 	p.to = function(props, duration, ease) {
 		if (duration == null || duration < 0) { duration = 0; }
-		var step = this._addStep(+duration, null, ease);
-		this._appendProps(props, step);
+		var step = this._addStep(+duration, null, ease);// 计算时间 用的 
+		this._appendProps(props, step);// 将 属性应用到obj
 		return this;
 	};
 	
